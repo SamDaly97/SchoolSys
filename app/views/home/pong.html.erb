@@ -1,0 +1,13 @@
+<html> 
+<% if @breadcrumbs && @breadcrumbs.any %>
+<h3> History </h3>
+<ul>
+  <% @breadcrumbs[0..2].each do |breadcrumb|%>
+  <li><%= link_to breadcrumb, breadcrumb %> </li>
+  <%end%>
+</ul>
+<% end %>
+<body>
+<%= yield %>
+</body>
+</html>

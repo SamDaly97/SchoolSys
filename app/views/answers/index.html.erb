@@ -1,0 +1,24 @@
+<div class="main-nav">
+<h1>Answers in <%= @problem.subject %></h1>
+<table>
+<tr>
+<th>Answer reply</th>
+</tr>
+<% for answer in @answers %>
+<tr>
+<td><%= answer.reply %></td>
+<td><%= link_to 'Show', problem_answer_path(@problem, answer)
+%></td>
+<% if current_teacher %>
+  <td><%= link_to 'Edit', edit_problem_answer_path(@problem, answer)
+  %></td>
+  <td><%= link_to 'Destroy', problem_answer_path(@problem, answer),
+  :confirm => 'Are you sure?', :method => :delete %></td>
+<% end %>
+</tr>
+<% end %>
+</table>
+
+<%= link_to 'New answer', new_problem_answer_path(@problem) %>
+<%= link_to 'Back to problem', @problem %>
+</div>

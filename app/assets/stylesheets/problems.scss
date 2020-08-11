@@ -1,0 +1,95 @@
+// Place all the styles related to the Problems controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.answers{
+
+    position:fixed;
+    width: 30%;
+    margin-left:-150px; /* half of width */
+      margin-top:-150px;  /* half of height */
+      top:50%;
+      left:50%;
+}
+table{
+
+  position:fixed;
+  width: 30%;
+  margin-left:-150px; /* half of width */
+    margin-top:-150px;  /* half of height */
+    top:50%;
+    left:50%;
+
+}
+
+.searchingclass{
+  position:fixed;
+  width: 25%;
+  margin-left:-150px; /* half of width */
+    margin-top:-150px;  /* half of height */
+    top:45%;
+    left:50%;
+}
+
+h1{
+  position:fixed;
+  width: 30%;
+  margin-left:-150px; /* half of width */
+    margin-top:-150px;
+    top:15%;
+    left:50%;
+}
+h2{
+  position:fixed;
+  width: 25%;
+  margin-left:-150px; /* half of width */
+    margin-top:-150px;
+    top:24%;
+    left:50%;
+}
+* {
+  font-family: "Lora", serif;
+}
+
+.title {
+  text-align: center;
+}
+
+.posts {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.post-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  max-width: 300px;
+  height: 400px;
+  box-shadow: 1px 1px rgb(68, 68, 68);
+  border: 1px solid rgb(68, 68, 68);
+  border-radius: 5px;
+  margin: 20px 0px;
+}
+
+.body-trunc {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.post-form{
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        margin: 20px auto;
+    }
+    .form-group{
+      text-align: center;
+        justify-content: space-between;
+        margin: 5px 0px;
+        align-items: center;
+        max-width: 1400px;
+        padding-left: 500px;
+    }

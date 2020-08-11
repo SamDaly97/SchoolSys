@@ -1,0 +1,7 @@
+<h1>Answer in <%= @problem.subject %></h1>
+<p>
+<b>answer reply:</b>
+<%= @answer.reply %>
+</p>
+<%= link_to 'Edit', edit_problem_answer_path(@problem, @answer) %> |
+<%= link_to 'Back', problem_answers_path(@problem) %>

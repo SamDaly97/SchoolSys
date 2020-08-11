@@ -1,0 +1,30 @@
+<div class="answers"
+<p>
+  <strong>Subject:</strong>
+  <%= @problem.subject %>
+</p>
+<p>
+  <strong>Topic:</strong>
+  <%= @problem.topic %>
+</p>
+<p>
+  <strong>Question:</strong>
+  <%= @problem.question %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @problem.user.email.split('@')[0].capitalize %>
+</p>
+
+<h2>Answers</h2>
+<% @problem.answers.each do |answer| %>
+<p>
+  <b>Answer reply:</b>
+  <%= answer.reply %>
+</p>
+<% end %>
+<%= link_to 'Edit problem', edit_problem_path(@problem) %> |
+<%= link_to 'Back', problems_path %> |
+<%= link_to 'Show Answers', problem_answers_path(@problem) %>
+</div>

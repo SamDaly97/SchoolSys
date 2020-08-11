@@ -1,0 +1,7 @@
+<div class="problems">
+<h1 class="profile"><%= @user.email.split('@')[0].capitalize%>'s Profile Page</h1>
+
+  <% @user_problems.each do |problem| %>
+    <%= link_to problem.question, problem_path(problem) %>
+  <% end %>
+</div>

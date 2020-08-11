@@ -1,0 +1,34 @@
+A new Question was asked: How to read a map
+###############Observer Demo:#
+###############Observer Demo:#
++++ ProblemObserver: The Problem for
+      samuel@admin.com has been updated to:
+      - subject: Ruby
+      - topic: Rails
+      - question I installed rails 
+##############################
+This is the new information
+###############Observer Demo:#
++++ ProblemObserver: The Problem for
+      samuel@admin.com has been updated to:
+      - subject: cooking
+      - topic: stew
+      - question ingredients? 
+##############################
+This is the new information
+This is the new information
+This is the new information
+This is the new information
+This is the new information
+This is the new information
+This is the new information
+This is the new information
+###############Observer Demo:#
++++ ProblemObserver: The Problem for
+      samuel@admin.com has been updated to:
+      - subject: cooking
+      - topic: stew
+      - question ingredients? 
+##############################
+This is the new information
+A new question was asked: what is a cell
