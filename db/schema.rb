@@ -20,20 +20,6 @@ ActiveRecord::Schema.define(version: 2020_08_11_193446) do
     t.index ["problem_id"], name: "index_answers_on_problem_id"
   end
 
-  create_table "orders", force: :cascade do |t|
-    t.integer "product_id"
-    t.integer "user_id"
-    t.integer "status", default: 0
-    t.string "token"
-    t.string "charge_id"
-    t.string "error_message"
-    t.string "customer_id"
-    t.integer "payment_gateway"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.integer "price_cents", default: 0, null: false
-  end
-
   create_table "problems", force: :cascade do |t|
     t.string "subject"
     t.string "topic"
@@ -42,14 +28,6 @@ ActiveRecord::Schema.define(version: 2020_08_11_193446) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_problems_on_user_id"
-  end
-
-  create_table "products", force: :cascade do |t|
-    t.string "name"
-    t.string "stripe_plan_name"
-    t.string "paypal_plan_name"
-    t.integer "price_cents", default: 0, null: false
-    t.string "price_currency", default: "USD", null: false
   end
 
   create_table "purchases", force: :cascade do |t|
@@ -67,12 +45,6 @@ ActiveRecord::Schema.define(version: 2020_08_11_193446) do
     t.datetime "updated_at", precision: 6, null: false
     t.index ["session_id"], name: "index_sessions_on_session_id", unique: true
     t.index ["updated_at"], name: "index_sessions_on_updated_at"
-  end
-
-  create_table "subscriptions", force: :cascade do |t|
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.string "stripe_customer_token"
   end
 
   create_table "teachers", force: :cascade do |t|
@@ -95,7 +67,7 @@ ActiveRecord::Schema.define(version: 2020_08_11_193446) do
     t.datetime "remember_created_at"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.boolean "admin"
+    t.boolean "admin", default: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end

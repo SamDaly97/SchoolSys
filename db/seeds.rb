@@ -9,3 +9,7 @@
 #admin email and password
 #-----------admin@admin.com----------
 #-----------password--------------
+User.create!(email: "Samuel@admin.com",
+             password:              "password",
+             password_confirmation: "password",
+             admin: true)
