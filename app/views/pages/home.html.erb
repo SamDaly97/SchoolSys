@@ -4,8 +4,7 @@
     <h1>Welcome back <%= current_user.email.split('@')[0].capitalize %></h1>
 
     <p class="lead">
-      You have signed in!  If this were a real app some sweet conent
-      would go here.  But it's just a test.  You might want to sign out now.
+      Welcome to Online School!! Come on in and have some fun!
     </p>
     <a class="navbar-brand" <%= link_to 'User Sign out', destroy_user_session_path, method: :delete %></a>
     <a class="navbar-brand" <%= link_to 'Problems', problems_path %></a>
