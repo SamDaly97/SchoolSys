@@ -10,7 +10,6 @@
     <a class="navbar-brand" <%= link_to 'User Sign out', destroy_user_session_path, method: :delete %></a>
     <a class="navbar-brand" <%= link_to 'Problems', problems_path %></a>
     <a class="navbar-brand" <%= link_to "Profile", user_path(current_user) %></a>
-    <a class="navbar-brand" <%= link_to "School Shop", purchases_path %></a>
 
   <% else %>
     <h1>Welcome! Come and Sign in!</h1>

@@ -5,7 +5,7 @@ ruby '2.7.0'
 gem 'devise'
 gem 'bootstrap-sass'
 gem 'activerecord-session_store'
-gem 'paypal-checkout-sdk'
+
 gem 'rails-observers'
 
 
