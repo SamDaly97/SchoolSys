@@ -13,3 +13,9 @@ User.create!(email: "Samuel@admin.com",
              password:              "password",
              password_confirmation: "password",
              admin: true)
+
+
+
+#On Start up,
+#run rails db:migrate
+#run bundle exec rake db:seed
