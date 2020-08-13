@@ -5,7 +5,7 @@
       <a class="navbar-brand" <%= link_to 'User Sign out', destroy_user_session_path, method: :delete %></a>
     <% elsif current_user %>
       <a class="navbar-brand" <%= link_to 'User Sign out', destroy_user_session_path, method: :delete %></a>
-    <% elseif current_teacher %>
+    <% elsif current_teacher %>
       <a class="navbar-brand" <%= link_to 'Teacher Sign out', destroy_teacher_session_path, method: :delete %></a>
     <% else %>
       <a class="navbar-brand" <%= link_to 'User Sign up', new_user_registration_path %></a>
